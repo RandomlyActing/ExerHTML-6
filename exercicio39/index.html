@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td, tfoot {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <table style="width:50%">
+        <thead>
+            <tr>
+                <th>Pessoa</th>
+                <th>Caracteristas</th>
+                <th>Atributo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2">Ana</th>
+                <td>Idade</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Tamano</td>
+                <td>1,70</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Andre</th>
+                <td>Idade</td>
+                <td>65</td>
+            </tr>
+            <tr>
+                <td>Tamanho</td>
+                <td>1,89</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total de pessoas: 2</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
