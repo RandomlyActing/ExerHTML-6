@@ -1,0 +1,56 @@
+body,html{
+    height: 100%;
+    margin: 0;
+}
+        body{
+           
+            display: flex;
+            flex-direction: column;
+        }
+    .container{
+        height: 10%;
+        width: 98%;
+        justify-content: center;
+        background-color: blue;
+        margin: 1%;
+    }
+    .container2{
+        justify-content: flex-end;
+        align-self: flex-end;
+        background-color: aquamarine;
+        height: 50%;
+        width: 98%;
+        margin: 1%;
+    }
+    .flex-container{
+        display: flex;
+        height: 48%;
+    }
+    .barra1{
+        justify-content: flex-start;
+        align-self: flex-start;
+        width: 32%;
+        height: 90%;
+        background-color: aquamarine;
+        margin: 1%;
+    }
+    
+    .barra2{
+        width: 32%;
+        height: 90%;
+        justify-content: flex-start;
+        align-self: flex-start;
+        background-color: gray;
+        margin: 1%;
+    }
+    .barra3{
+        width: 32%;
+        height: 90%;
+        justify-content: flex-start;
+        align-self: flex-start;
+        background-color: aquamarine;
+        margin: 1%;
+    }
+    
+    
+    
