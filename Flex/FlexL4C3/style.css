@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        margin: 10px;
+    }
+    .top {
+        background-color: aqua;
+        height: 50px;
+        width: 350px;
+        
+    }
+    .medium{
+        height: 100pX;
+        width: 1305px;
+        margin: 10px;
+        background-color: red;
+    }
+    .bot {
+        background-color: aqua;
+        height: 425px;
+        width: 400px;
+    }
+    #algo{
+        width: 925px;
+    }
+    #meio{
+        background-color: gray;
+    }
