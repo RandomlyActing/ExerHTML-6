@@ -22,8 +22,9 @@ header{
     height: 175px;
     margin: 10px;
 }
-#um{
+.um{
     background-color: gray;
     width: 790px;
-    height: 275px;
+    height: 290px;
+    margin: 0px;
 }
