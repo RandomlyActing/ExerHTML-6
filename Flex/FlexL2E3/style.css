@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: brown;
+    margin: 5px;
+    width: 1305px;
+    height: 100px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: 10px;
+}
+.algo{
+    background-color:aquamarine;
+    width: 250px;
+    height: 175px;
+    margin: 10px;
+}
+.um{
+    background-color: gray;
+    width: 790px;
+    height: 290px;
+    margin: 0px;
+}
