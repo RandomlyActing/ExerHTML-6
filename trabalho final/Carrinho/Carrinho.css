@@ -1,0 +1,101 @@
+
+.init{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 10px;
+}
+.table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 250px;
+    height: 50px;
+  }
+.tableM{
+    margin: 7px;
+}
+
+.alg{
+    min-width: 60%;
+    min-height: 97%;
+    max-width: 60%;
+    max-height: 97%;
+    /* background-color: aquamarine; */
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.col{
+    max-height: 97%;
+    max-width: 40%;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+.b{
+    max-width: 100%;
+    min-height: 90%;
+    max-height: 90%;
+    background-color:gainsboro;
+    top: 30%;
+    overflow: hidden;
+    overflow-y: scroll;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.sm{
+    background-color: plum;
+    height: 70%;
+    min-width: 95%;
+    max-width: 95%;
+    margin-left: 20px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+}
+.buttom{
+    background-color: greenyellow;
+    color: black;
+    border: none;
+    font-size: 24px;
+}
+
+#space{
+    height: 28%;
+    margin-top: 10px;
+}
+
+.cont{
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    background: url(evening-landscape-minimal-4k-kl-2560x1440.jpg);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.b::-webkit-scrollbar{
+    width: 10px;
+    background-color: gainsboro;
+    border-radius: 10px;
+    align-items: start;
+}
+.b::-webkit-scrollbar-thumb{
+    width: 10px;
+    border-radius: 10px;
+    background-color:blueviolet;
+}
