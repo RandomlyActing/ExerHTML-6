@@ -1,0 +1,24 @@
+body{
+    background-image: url(./img/fundo.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+
+
+
+.historia, .missão, .Equipe, .Filosofia {
+    margin: 20px; /* Adiciona margem externa de 20px a todas as divs */
+    padding: 20px; /* Adiciona padding interno de 20px a todas as divs */
+    border-radius: 10px; /* Arredonda as bordas das divs */
+    background-color: #8F60A5; /* Define a cor de fundo das divs */
+    font-size: 16px; /* Aumenta o tamanho da fonte para 16 pixels */
+    color: white; /* Define a cor do texto para um tom de cinza escuro */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    opacity: 70%;
+}
+.footer {
+    color: white; /* Define a cor do texto para um tom de cinza escuro */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+    
