@@ -47,7 +47,7 @@ a.nav-link {
 }
 
 
-footer {
-display: flex;
-
+.footer {
+    color: white; /* Define a cor do texto para um tom de cinza escuro */
+    text-align: center; /* Centraliza o texto horizontalmente */
 }

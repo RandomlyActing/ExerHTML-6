@@ -3,7 +3,13 @@ body{
     background-size: cover;
     width: 100%;
 }
-
+.navbar {
+    background-color:rgb(0, 0, 0);
+    
+}
+a.nav-link {
+    color: #8F60A5
+}
 
 
 

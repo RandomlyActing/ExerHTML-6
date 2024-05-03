@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulário de Pagamento</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="payment">
+      <div class="payment-logo">
+        <p>p</p>
+      </div>
+    
+    <h2>Gateway de Pagamento</h2>
+    <div class="form">
+      <div class="cartao space icon-relative">
+        <label class="rotulo">Titular do Cartão:</label>
+        <input type="text" class="entrada" placeholder="Nome no Cartão">
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="cartao space icon-relative">
+        <label class="rotulo">Número do Cartão:</label>
+        <input type="number" class="entrada" data-mask="0000 0000 0000 0000" placeholder="Número do Cartão">
+        <i class="far fa-credit-card"></i>
+      </div>
+      <div class="grupo-cartao space">
+        <div class="item-cartao icon-relative">
+          <label class="rotulo">Data de Validade:</label>
+          <input type="date" name="data-validade" class="entrada" data-mask="00 / 00"  placeholder="MM / AA">
+          <i class="far fa-calendar-alt"></i>
+        </div>
+        <div class="item-cartao icon-relative">
+          <label class="rotulo">CVC:</label>
+          <input type="text" class="entrada" id="cvcInput" maxlength="3" placeholder="CVC">
+  <i class="fas fa-lock"></i>
+</div>
+
+<script>
+  document.getElementById('cvcInput').addEventListener('input', function() {
+    // Remove qualquer espaço em branco e não números do valor inserido
+    this.value = this.value.replace(/\D/g, '');
+  });
+</script>        </div>
+      </div>
+        
+      <div class="botao" onclick="confirmarCompra()">
+        Pagar
+      </div> 
+
+    </div>
+  </div>
+</div>
+<script>
+  function confirmarCompra(){
+    alert("Compra confirmada! Valeu pelo dinheiro");
+  }
+</script>
+<footer>
+  <div class="footer">
+  <p>&copy; 2024 Loja dos 6. Todos os direitos reservados.</p>
+</div>
+</footer>
+</body>
+</html>
