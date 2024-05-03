@@ -6,22 +6,23 @@
 body{
     background-image: url(assets/back);
     background-size: cover;
-    width: 100%;
+    width: 100hv;
 }
 
 .center{
 display: flex;
 flex-wrap: wrap;
-max-width: 1280px;
+max-width: 1280hv;
 margin: 0 auto;
 padding: 0 2%;
 }
 
 header{
-    pedding: 20px 0; 
+ pedding: 20px 0; 
 
 }
 .logo{
+
     width: 60%;
     gap: 20px;
 }
@@ -44,9 +45,9 @@ header{
     gap: 20px;    
 }
 .textoSobre{
-    
     display : flex;
     margin: 20px 50px;
+    margin-bottom: 300px;   
 }
 .sotexto{
     margin: 0px;

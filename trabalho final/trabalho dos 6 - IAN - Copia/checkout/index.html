@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Pagamento</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/imask"></script>
+</head>
+<body>
+<div class="wrapper">
+  <div class="payment">
+    <div class="payment-logo">
+      <p>p</p>
+    </div>
+    
+    <h2>Gateway de Pagamento</h2>
+    <div class="form">
+      <div class="cartao space icon-relative">
+        <label class="rotulo">Titular do Cartão:</label>
+        <input type="text" class="entrada" placeholder="Nome no Cartão">
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="cartao space icon-relative">
+        <label class="rotulo">Número do Cartão:</label>
+        <input type="text" class="entrada" data-mask="0000 0000 0000 0000" placeholder="Número do Cartão">
+        <i class="far fa-credit-card"></i>
+      </div>
+      <div class="grupo-cartao space">
+        <div class="item-cartao icon-relative">
+          <label class="rotulo">Data de Validade:</label>
+          <input type="text" name="data-validade" class="entrada" placeholder="MM/AA">
+          <i class="far fa-calendar-alt"></i>
+        </div>
+        <div class="item-cartao icon-relative">
+          <label class="rotulo">CVC:</label>
+          <input type="text" class="entrada" id="cvcInput" maxlength="3" placeholder="CVC">
+          <i class="fas fa-lock"></i>
+        </div>
+      </div>
+        
+      <div class="botao" onclick="confirmarCompra()">
+        Pagar
+      </div> 
+
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById('cvcInput').addEventListener('input', function() {
+    // Remove qualquer espaço em branco e não números do valor inserido
+    this.value = this.value.replace(/\D/g, '');
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Máscara para o número do cartão
+    var cardNumberInput = document.querySelector('input[data-mask="0000 0000 0000 0000"]');
+    if (cardNumberInput) {
+      var cardNumberMask = IMask(cardNumberInput, {
+        mask: '0000 0000 0000 0000'
+      });
+    }
+
+    // Máscara para a data de validade (MM/AA)
+    var expiryDateInput = document.querySelector('input[name="data-validade"]');
+    if (expiryDateInput) {
+      var expiryDateMask = IMask(expiryDateInput, {
+        mask: '00/00'
+      });
+    }
+
+    // Máscara para o CVC
+    var cvcInput = document.getElementById('cvcInput');
+    if (cvcInput) {
+      var cvcMask = IMask(cvcInput, {
+        mask: '000'
+      });
+    }
+  });
+
+  function confirmarCompra() {
+    alert("Compra confirmada! Obrigado pelo pagamento!");
+  }
+</script>
+</body>
+</html>
